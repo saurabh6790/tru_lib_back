@@ -79,7 +79,7 @@ wn.views.QueryReport = Class.extend({
 		var route = wn.get_route();
 		var me = this;
 		if(route[1]) {
-			if(me.report_name!=route[1]) {
+			if((me.report_name!=route[1]) || wn.route_options) {
 				me.report_name = route[1];
 				this.wrapper.find(".no-report-area").toggle(false);
 				me.appframe.set_title(wn._("Query Report")+": " + wn._(me.report_name));
