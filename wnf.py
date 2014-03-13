@@ -357,7 +357,7 @@ def watch():
 def backup(site=None, with_files=False, verbose=True, backup_path_db=None, backup_path_files=None, delete_older_than=6):
 	from webnotes.utils.backups import scheduled_backup
 	webnotes.connect(site=site)
-	odb = scheduled_backup(older_than=delete_older_than, ignore_files=not with_files, backup_path_db=backup_path_db, backup_path_files=backup_path_files)
+	odb = scheduled_backup(delete_older_than=delete_older_than, ignore_files=not with_files, backup_path_db=backup_path_db, backup_path_files=backup_path_files)
 	if verbose:
 		from webnotes.utils import now
 		print "database backup taken -", odb.backup_path_db, "- on", now()
