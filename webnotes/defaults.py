@@ -101,8 +101,8 @@ def clear_default(key=None, value=None, parent=None, name=None):
 	
 	if not conditions:
 		raise Exception, "[clear_default] No key specified."
-	
-	webnotes.conn.sql("""delete from tabDefaultValue where %s""" % " and ".join(conditions), values)
+
+	webnotes.conn.sql("""delete from tabDefaultValue where {0}""".format(" and ".join(conditions)), tuple(values))
 	clear_cache()
 	
 def get_defaults_for(parent="Control Panel"):
