@@ -17,7 +17,7 @@ def execute(filters=None):
 		todo.date and getdate(todo.date) or getdate("1900-01-01")), reverse=True)
 		
 	columns = ["ID:Link/ToDo:90", "Priority::60", "Date:Date", "Description::150",
-		"Assigned To/Owner:Link/Profile:120", "Assigned By:Link/Profile:120", "Reference::200"]
+		"Assigned To/Owner:Data:120", "Assigned By:Data:120", "Reference::200"]
 
 	result = []
 	for todo in todo_list:
