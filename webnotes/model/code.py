@@ -43,7 +43,6 @@ def get_server_obj(doc, doclist = [], basedoctype = ''):
 def get_doctype_class(doctype, module):
 	from webnotes.utils import cint
 	import webnotes
-
 	module = load_doctype_module(doctype, module)
 	if module:
 		DocType = getattr(module, 'DocType')
@@ -58,8 +57,10 @@ def get_doctype_class(doctype, module):
 	return DocType
 
 def get_module_name(doctype, module, prefix):
+	import webnotes
 	from webnotes.modules import scrub
 	_doctype, _module = scrub(doctype), scrub(module)
+
 	return '%s.doctype.%s.%s%s' % (_module, _doctype, prefix, _doctype)
 
 def load_doctype_module(doctype, module=None, prefix=""):

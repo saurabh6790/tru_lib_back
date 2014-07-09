@@ -24,7 +24,10 @@ class Profile:
 		self.can_get_report = []
 		self.allow_modules = []
 		self.in_create = []
-
+ 	# def on_update(self):
+ 	# 	from webnotes.utils import now_datetime
+		# current_hour = int(now_datetime().strftime('%H'))
+ 	# 	webnotes.errprint(current_hour)
 	def get_roles(self):
 		"""get list of roles"""
 		if not self.roles:

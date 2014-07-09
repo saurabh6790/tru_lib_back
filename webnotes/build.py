@@ -59,6 +59,7 @@ def clear_pyc_files():
 		if 'backups' in folders: folders.remove('backups')
 		
 		for f in files:
+			# print f
 			if f.decode("utf-8").endswith(".pyc"):
 				os.remove(os.path.join(path, f))
 	

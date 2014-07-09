@@ -11,7 +11,7 @@ def get(arg=None):
 	return webnotes.conn.sql("""select name, owner, description, date,
 		priority, checked, reference_type, reference_name, assigned_by
 		from `tabToDo` where (owner=%s or assigned_by=%s)
-		order by field(priority, 'High', 'Medium', 'Low') asc, date asc""",
+		order by field(priority, 'High', 'Medium', 'Low') desc, date desc""",
 		(webnotes.session['user'], webnotes.session['user']), as_dict=1)
 
 @webnotes.whitelist()		

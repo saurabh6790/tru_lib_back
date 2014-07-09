@@ -79,6 +79,7 @@ wn.ui.Dialog = wn.ui.FieldGroup.extend({
 	},
 	show: function() {
 		// show it
+		// console.log("hello")
 		this.$wrapper.modal("show");
 	},
 	hide: function(from_event) {
