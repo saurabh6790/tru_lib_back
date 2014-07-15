@@ -147,6 +147,10 @@ wn.ui.toolbar.Toolbar = Class.extend({
 					+wn._('About')+'</a></li>\
 				<li><a href="http://erpnext.org/attributions.html" target="_blank"><i class="icon-fixed-width icon-heart"></i> '
 					+wn._('Attributions')+'</a></li>\
+				<li><a href="../app.html#sample-generation" ><i class="icon-fixed-width icon-heart"></i> '
+					+wn._('Sample Generation')+'</a></li>\
+				<li><a href="../app.html#verification" ><i class="icon-fixed-width icon-heart"></i> '
+					+wn._('verification')+'</a></li>\
 			</ul>\
 		</li>');
 		
