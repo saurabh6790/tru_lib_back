@@ -150,7 +150,7 @@ wn.ui.toolbar.Toolbar = Class.extend({
 				<li><a href="../app.html#sample-generation" ><i class="icon-fixed-width icon-heart"></i> '
 					+wn._('Sample Generation')+'</a></li>\
 				<li><a href="../app.html#verification" ><i class="icon-fixed-width icon-heart"></i> '
-					+wn._('verification')+'</a></li>\
+					+wn._('Verification')+'</a></li>\
 			</ul>\
 		</li>');
 		
