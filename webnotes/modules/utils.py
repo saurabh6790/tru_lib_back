@@ -2,7 +2,6 @@
 # MIT License. See license.txt 
 
 from __future__ import unicode_literals
-
 import webnotes, os
 import webnotes.modules
 from webnotes.utils import cstr
